@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFC107"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical">
+
+<!--       <TextView-->
+<!--           android:id="@+id/textView"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:textSize="16sp"-->
+<!--           android:layout_height="wrap_content" />-->
+
+       <Button
+           android:id="@+id/button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#FFC107"
+           android:layout_gravity="center"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           android:text="Reload" />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:text="Country"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:text="City"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView3"
+                android:text="Temperature"
+                android:maxLength="4"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:textSize="35sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:text="℃"
+                android:maxLength="4"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:textSize="35sp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/img"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Max"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:maxLength="4"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/textView4"
+                    android:text="Max"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:maxLength="4"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Min"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:maxLength="4"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/textView5"
+                    android:maxLength="4"
+                    android:text="Min"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"/>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
